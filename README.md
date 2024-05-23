@@ -1,4 +1,6 @@
-# Running the scripts and creating the figures
+# Replication code for Large Language Models Reflect Human Citation Patterns with a Heightened Citation Bias
+
+## Running the scripts and creating the figures
 To run the scripts, first run:
 
 ```text
@@ -23,7 +25,7 @@ The necessary data to run the notebooks can be found in the results folder.
 
 The raw data which is created in the Python scripts in the src folder will be released via a public Zenodo repository.
 
-# Data
+## Data
 We describe the steps of our automated pipeline to retrieve all the necessary information for our analysis. Our data collection resulted in $166$ papers published at AAAI ($25$), NeurIPS ($72$), ICML ($38$), and ICLR ($31$) for a total of 3,066 references (see Appendix Table \ref{tab:paper_details} for a full list of included papers). The data collection pipeline uses GPT-4 to postprocess parts of the data, which costs approximately 14 dollars for our experiment. Note that these steps only have to be carried out once for the data collection. However, steps 4 and 5 are also used to postprocess and enrich the information of the generated references and will need to be carried out for each run. The experiment was run on 4 November 2023 and each step was manually verified and tested.
 
 ### Step 1. ArXiv (src/00_download_data.py and src/utils/arxiv.py)
