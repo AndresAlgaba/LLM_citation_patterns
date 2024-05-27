@@ -1,4 +1,5 @@
 # Replication code for Large Language Models Reflect Human Citation Patterns with a Heightened Citation Bias
+https://arxiv.org/abs/2405.15739
 
 ## Running the scripts and creating the figures
 To run the scripts, first run:
@@ -23,7 +24,7 @@ The figures and results can be replicated in the corresponding notebooks found i
 
 The necessary data to run the notebooks can be found in the results folder.  
 
-The raw data which is created in the Python scripts in the src folder will be released via a public Zenodo repository.
+The raw data which is created in the Python scripts in the src folder is available via: https://zenodo.org/records/11299894. This data contains a new data folder and complementary files to the results folder.
 
 ## Data
 We describe the steps of our automated pipeline to retrieve all the necessary information for our analysis. Our data collection resulted in $166$ papers published at AAAI ($25$), NeurIPS ($72$), ICML ($38$), and ICLR ($31$) for a total of 3,066 references (see Appendix Table \ref{tab:paper_details} for a full list of included papers). The data collection pipeline uses GPT-4 to postprocess parts of the data, which costs approximately 14 dollars for our experiment. Note that these steps only have to be carried out once for the data collection. However, steps 4 and 5 are also used to postprocess and enrich the information of the generated references and will need to be carried out for each run. The experiment was run on 4 November 2023 and each step was manually verified and tested.
